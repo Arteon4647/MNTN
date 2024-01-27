@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/HG.svg);
+  background-color: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9FD5EF 61.38%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body * {
+  font-family: Manrope;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section .section-content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 0 650px 0;
+}
+.hero-section .section-content .links-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50px);
+}
+.hero-section .section-content .links-left a {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+  padding-right: 40px;
+}
+.hero-section .section-content .links-left .icons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .section-content .links-left .icons-wrapper img {
+  padding-top: 20px;
+}
+.hero-section .section-content .content-center {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .section-content .content-center .center-top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero-section .section-content .content-center .center-top .band {
+  width: 72px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #dd8737;
+}
+.hero-section .section-content .content-center .center-top h5 {
+  color: #dd8737;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.hero-section .section-content .content-center h1 {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+.hero-section .section-content .content-center .center-bot {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.hero-section .section-content .content-center .center-bot a {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-section .section-content .links-right h5 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.hero-section .section-content .links-right nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.hero-section .section-content .links-right nav a {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 240px;
+}
+.card-section .card-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.card-section .card-wrapper .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.card-section .card-wrapper .card .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.card-section .card-wrapper .card .card-content h1 {
+  position: absolute;
+  color: #1e1e1e;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 240px;
+  opacity: 0.1;
+  transform: translate3d(-230px, -250px, 0);
+  z-index: 2;
+}
+.card-section .card-wrapper .card .card-content .card-content-center {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.card-section .card-wrapper .card .card-content .card-content-center .card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+.card-section .card-wrapper .card .card-content .card-content-center .card-top .band-card {
+  width: 72px;
+  height: 2px;
+  flex-shrink: 0;
+  background: #900000;
+}
+.card-section .card-wrapper .card .card-content .card-content-center .card-top h5 {
+  color: #900000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.card-section .card-wrapper .card .card-content .card-content-center h2 {
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-section .card-wrapper .card .card-content .card-content-center span {
+  color: #1e1e1e;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.card-section .card-wrapper .card .card-content .card-content-center .card-bot {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.card-section .card-wrapper .card .card-content .card-content-center .card-bot h5 {
+  color: #900000;
+  leading-trim: both;
+  text-edge: cap;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}

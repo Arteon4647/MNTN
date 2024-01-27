@@ -1,0 +1,243 @@
+@use "rules";
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/HG.svg);
+  background-color: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, #9FD5EF 61.38%);
+  object-fit: cover;
+
+  * {
+    font-family: Manrope;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .section-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 0 650px 0;
+
+    .links-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-50px);
+
+      a {
+        @include rules.whitetext;
+        text-decoration: none;
+        cursor: pointer;
+        transform: rotate(90deg);
+        padding-right: 40px;
+      }
+
+      .icons-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          padding-top: 20px;
+        }
+      }
+    }
+
+    .content-center {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      .center-top {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .band {
+          width: 72px;
+          height: 2px;
+          flex-shrink: 0;
+          background: rules.$darkorange;
+        }
+
+        h5 {
+          color: rules.$darkorange;
+          leading-trim: both;
+          text-edge: cap;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+        }
+      }
+
+      h1 {
+        color: rules.$white;
+        font-family: Manrope;
+        font-size: 88px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100px;
+        text-transform: capitalize;
+      }
+
+      .center-bot {
+        margin-top: 5px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        a {
+          @include rules.whitetext;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .links-right {
+      h5 {
+        @include rules.whitetext;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+
+        a {
+          @include rules.whitetext;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.card-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 240px;
+
+  .card-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        h1 {
+          position: absolute;
+          color: rules.$black;
+          font-feature-settings: "clig" off, "liga" off;
+          font-family: Manrope;
+          font-size: 240px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 240px;
+          opacity: 0.1;
+          transform: translate3d(-230px, -250px, 0);
+          z-index: 2;
+        }
+
+        .card-content-center {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+          .card-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+
+            .band-card {
+              width: 72px;
+              height: 2px;
+              flex-shrink: 0;
+              background: rules.$darkred;
+            }
+
+            h5 {
+              color: rules.$darkred;
+              font-family: Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 6px;
+              text-transform: uppercase;
+            }
+          }
+
+          h2 {
+            color: rules.$black;
+            font-family: Manrope;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+
+          span {
+            @include rules.blacktext;
+          }
+
+          .card-bot {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+
+            h5 {
+              color: rules.$darkred;
+              leading-trim: both;
+              text-edge: cap;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@use "rules";
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap");
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0 100px 0;
+
+  .footer-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      .left-top {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h3 {
+          color: rules.$black;
+          font-family: Manrope;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.32px;
+          text-transform: uppercase;
+        }
+
+        span {
+          width: 60%;
+          @include rules.blacktext;
+        }
+      }
+
+      h4 {
+        @include rules.blacktext;
+        opacity: 0.5;
+      }
+    }
+
+    .right-content {
+      display: flex;
+      gap: 200px;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h5 {
+          color: rules.$darkred;
+          font-family: Manrope;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        a {
+          @include rules.blacktext;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
